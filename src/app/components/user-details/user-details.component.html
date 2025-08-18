@@ -5,31 +5,50 @@
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span class="mat-h2">Nome: <span class="mat-h3">Fulano da Silva</span></span>
+      <span class="mat-h2"
+        >Nome: <span class="mat-h3">{{ user.nome }}</span></span
+      >
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span class="mat-h2">Email: <span class="mat-h3">teste</span></span>
+      <span class="mat-h2"
+        >Email: <span class="mat-h3">{{ user.email }}</span></span
+      >
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span class="mat-h2">Telefone: <span class="mat-h3">(11) 91234-5678</span></span>
+      <span class="mat-h2"
+        >Telefone: <span class="mat-h3">{{ user.telefone }}</span></span
+      >
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span class="mat-h2">Endereço: <span class="mat-h3">Rua das Flores, 42, São Paulo - SP</span></span>
+      <span class="mat-h2"
+        >Endereço:
+        <span class="mat-h3"
+          >{{ user.endereco?.rua }}, {{ user.endereco?.numero }},
+          {{ user.endereco?.cidade }} - {{ user.endereco?.estado }}</span
+        ></span
+      >
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span class="mat-h2">Ativo: <span class="mat-h3">Não</span></span>
+      <span class="mat-h2"
+        >Ativo: <span class="mat-h3">{{ user.ativo }}</span></span
+      >
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span class="mat-h2">Função: <span class="mat-h3">Desenvolvedor</span></span>
+      <span class="mat-h2"
+        >Função: <span class="mat-h3">{{ user.funcao }}</span></span
+      >
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span class="mat-h2">Data de Cadastro: <span class="mat-h3">20/08/2023</span></span>
+      <span class="mat-h2"
+        >Data de Cadastro:
+        <span class="mat-h3">{{ user.dataCadastro }}</span></span
+      >
     </mat-list-item>
     <mat-divider></mat-divider>
   </mat-list>
