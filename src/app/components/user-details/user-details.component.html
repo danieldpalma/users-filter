@@ -18,17 +18,13 @@
     <mat-divider></mat-divider>
     <mat-list-item>
       <span class="mat-h2"
-        >Telefone: <span class="mat-h3">{{ user.telefone }}</span></span
+        >Telefone: <span class="mat-h3">{{ user.telefone | phone }}</span></span
       >
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
       <span class="mat-h2"
-        >Endereço:
-        <span class="mat-h3"
-          >{{ user.endereco?.rua }}, {{ user.endereco?.numero }},
-          {{ user.endereco?.cidade }} - {{ user.endereco?.estado }}</span
-        ></span
+        >Endereço: <span class="mat-h3">{{ user.endereco?.rua }}, {{ user.endereco?.numero }}, {{ user.endereco?.cidade }} - {{ user.endereco?.estado }}</span></span
       >
     </mat-list-item>
     <mat-divider></mat-divider>
@@ -46,8 +42,7 @@
     <mat-divider></mat-divider>
     <mat-list-item>
       <span class="mat-h2"
-        >Data de Cadastro:
-        <span class="mat-h3">{{ user.dataCadastro }}</span></span
+        >Data de Cadastro: <span class="mat-h3">{{ user.dataCadastro }}</span></span
       >
     </mat-list-item>
     <mat-divider></mat-divider>
